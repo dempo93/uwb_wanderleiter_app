@@ -5,7 +5,7 @@ for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   var paid = document.createElement("PAID");
-  var txt2 = document.createTextNode("\u00D8");
+  var txt2 = document.createTextNode("\u20AC");
   var member = document.createElement("MEMBER");
   var txt3 = document.createTextNode("M");
   span.className = "close";
@@ -29,13 +29,21 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
+// Click on a paid button to approve of paying
 var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'PAID') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Add a "checked" symbol when clicking on a list item
+/*var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
   }
-}, false);
+}, false);*/
 
 // Create a new list item when clicking on the "Add" button
 function newElement() {
@@ -53,7 +61,7 @@ function newElement() {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   var paid = document.createElement("PAID");
-  var txt2 = document.createTextNode("\u00D8");
+  var txt2 = document.createTextNode("\u20AC");
   var member = document.createElement("MEMBER");
   var txt3 = document.createTextNode("nM");
   if(document.getElementById("memberBox").checked)txt3 = document.createTextNode("M");

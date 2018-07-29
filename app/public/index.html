@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
-<script src="javascripts/script.js" type="text/javascript" defer=""></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+  <script src="javascripts/script.js" type="text/javascript" defer=""></script>
 </head>
+
 <body>
 
-  <div id="myDIV" class="header">
-    <h2 style="margin:5px">UWB Routenbuch</h2>
+  <div class="header">
+    <div>
+      <span>
+        <h2 style='display:inline'>UWB Routenbuch</h2>
+        <img src="images/UWB_LOGO_small.png" -- alt="image" class="headerImage" align="right"/>
+      </span>
+    </div>
+
+
+
     <input type="text" id="myInput" placeholder="Surname, Name">
     <input type="checkbox" id="memberBox" name="feature" value="horns" />
     <label for="horns">Member</label>
     <span onclick="newElement()" class="addBtn">Add</span>
   </div>
-  
+
   <ul id="myUL">
     <li>Hit the gym</li>
     <li class="checked">Pay bills</li>
@@ -25,4 +35,5 @@
   </ul>
 
 </body>
+
 </html>
