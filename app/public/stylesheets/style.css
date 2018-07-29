@@ -46,11 +46,9 @@ ul li:hover {
 }
 
 /* When clicked on, add a background color */
-/*ul li.checked {
-  background: #888;
-  color: #fff;
+ul li.checked {
   text-decoration: line-through;
-}*/
+}
 
 /* Add a "checked" mark when clicked on */
 /*ul li.checked::before {
@@ -71,7 +69,7 @@ ul li:hover {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 12px 16px 12px 16px;
+  padding: 12px 12px 32px 16px;
 }
 
 .close:hover {
@@ -82,7 +80,7 @@ ul li:hover {
 /* Style the paid button */
 .paid {
   position: absolute;
-  right: 42px;
+  right: 0px;
   top: 0;
   padding: 12px 16px 12px 16px;
   background-color: #f44336;
@@ -102,16 +100,16 @@ ul li:hover {
 /* Style the member button */
 .member {
   position: absolute;
-  right: 86px;
+  right: 40px;
   top: 0;
   padding: 12px 16px 12px 16px;
-  background-color: #3658f4;
+  /*background-color: #3658f4;*/
 }
 
-.member:hover {
+/*.member:hover {
   background-color: #49f436;
   color: white;
-}
+}*/
 
 /* Style the header */
 .header {
@@ -119,6 +117,11 @@ ul li:hover {
   padding: 30px 40px;
   color: white;
   text-align: center;
+}
+
+.newParticipant{
+  background-color: #f44336;
+  padding: 20px 40px 60px;
 }
 
 /* Clear floats after the header */
